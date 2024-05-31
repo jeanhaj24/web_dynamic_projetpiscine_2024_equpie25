@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify - Cours Collectifs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #004AAD;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .coach-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .coach-info img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .coach-details {
+            max-width: 600px;
+        }
+
+        .availability-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .availability-table th,
+        .availability-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .availability-table th {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            background-color: #002b5e;
+            padding: 20px 0;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        footer a {
+            color: #4fc3f7;
+            text-decoration: none;
+        }
+        .cv-button,
+        .rdv-button {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .cv-button a,
+        .rdv-button a {
+            display: inline-block;
+            background-color: #004AAD;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cv-button a:hover,
+        .rdv-button a:hover {
+            background-color: #003580;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .footer-content .contact-form,
+        .footer-content .map {
+            width: 45%;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.jpg" alt="Sportify Logo">
+        <nav>
+            <a href="accueil.html">Accueil</a>
+            <a href="tout-parcourir.html">Tout Parcourir</a>
+            <a href="recherche.html">Recherche</a>
+            <a href="rendez-vous.html">Rendez-vous</a>
+            <a href="votre-compte.html">Votre Compte</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Cours Collectifs</h1>
+        <div class="coach-info">
+            <img src="photo_nathalie.jpg" alt="Coach Nathalie Girard">
+            <div class="coach-details">
+                <h2>Nathalie GIRARD</h2>
+                <p><strong>Bureau:</strong> 205</p>
+                <p><strong>Téléphone:</strong> +33 4 56 78 90 12</p>
+                <p><strong>Email:</strong> nathalie.girard@sportify.com</p>
+            </div>
+        </div>
+
+        <h3>Disponibilités</h3>
+        <table class="availability-table">
+            <tr>
+                <th>Jour</th>
+                <th>Matin</th>
+                <th>Après-midi</th>
+            </tr>
+            <tr>
+                <td>Lundi</td>
+                <td>Indisponible</td>
+                <td>Indisponible</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td>Disponible</td>
+                <td>Disponible</td>
+            </tr>
+            <tr>
+                <td>Mercredi</td>
+                <td>Indisponible</td>
+                <td>Indisponible</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td>Disponible</td>
+                <td>Disponible</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td>
+                <td>Indisponible</td>
+                <td>Indisponible</td>
+            </tr>
+            <tr>       
+         </table>
+    </div>
+                <div class="cv-button">
+            <a href="nathalie_girard.html">Voir le CV</a>
+        </div>
+                <div class="rdv-button">
+            <a href="prendre_rdv.html">Prendre Rendez-Vous</a>
+        </div>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-form">
+                <h2>Contact</h2>
+                <form>
+                    <input type="text" name="name" placeholder="Nom" required><br>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <textarea name="message" placeholder="Message" required></textarea><br>
+                    <button type="submit">Envoyer</button>
+                </form>
+                <p>Adresse: 123 Rue Sportify, Paris, France</p>
+                <p>Email: contact@sportify.com</p>
+                <p>Téléphone: +33 1 23 45 67 89</p>
+                <p>Suivez-nous sur les réseaux sociaux</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.3666821116227!2d2.287592415674837!3d48.85078057928705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67010aa8bda47%3A0x517d6a663f819af8!2s37%20Rue%20Sextius%20Michel%2C%2075015%20Paris%2C%20France!5e0!3m2!1sen!2sus!4v1621856714516!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <p>© 2024 Sportify. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

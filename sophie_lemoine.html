@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Alain Dubois</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #004AAD;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .cv-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cv-header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .cv-details {
+            max-width: 600px;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section h3 {
+            color: #004AAD;
+            border-bottom: 2px solid #004AAD;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            background-color: #002b5e;
+            padding: 20px 0;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        footer a {
+            color: #4fc3f7;
+            text-decoration: none;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .footer-content .contact-form,
+        .footer-content .map {
+            width: 45%;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Sportify Logo">
+        <nav>
+            <a href="accueil.html">Accueil</a>
+            <a href="tout-parcourir.html">Tout Parcourir</a>
+            <a href="recherche.html">Recherche</a>
+            <a href="rendez-vous.html">Rendez-vous</a>
+            <a href="votre-compte.html">Votre Compte</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="cv-header">
+            <img src="photo_sophie.jpg" alt="Sophie Lemoine">
+            <div class="cv-details">
+                <h1>Sophie Lemoine</h1>
+                <p><strong>Spécialité:</strong> Natation</p>
+                <div class="availability">
+                    <strong>Disponibilité:</strong> 
+                    <span>Mardi</span>
+                    <span>Jeudi</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Formation</h3>
+            <div class="education">
+                <div>
+                    <p><strong>Diplôme:</strong> Master en Education Physique</p>
+                    <p><strong>Institution:</strong> Université de Lyon</p>
+                    <p><strong>Année:</strong> 2012</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Expérience</h3>
+            <div class="experience">
+                <div>
+                    <p><strong>Poste:</strong> Coach Natation</p>
+                    <p><strong>Lieu:</strong> Omnes Gym</p>
+                    <p><strong>Durée:</strong> 3 ans</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Coordonnées</h3>
+            <p><strong>Email:</strong> sophie.lemoine@omnessport.com</p>
+            <p><strong>Téléphone:</strong> +33 7 34 87 26 54</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-form">
+                <h2>Contact</h2>
+                <form>
+                    <input type="text" name="name" placeholder="Nom" required><br>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <textarea name="message" placeholder="Message" required></textarea><br>
+                    <button type="submit">Envoyer</button>
+                </form>
+                <p>Adresse: 123 Rue Sportify, Paris, France</p>
+                <p>Email: contact@sportify.com</p>
+                <p>Téléphone: +33 1 23 45 67 89</p>
+                <p>Suivez-nous sur les réseaux sociaux</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.3666821116227!2d2.287592415674837!3d48.85078057928705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67010aa8bda47%3A0x517d6a663f819af8!2s37%20Rue%20Sextius%20Michel%2C%2075015%20Paris%2C%20France!5e0!3m2!1sen!2sus!4v1621856714516!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <p>© 2024 Sportify. Tous droits réservés.</p>
+    </footer>
+</body>
+
+
+</html>
