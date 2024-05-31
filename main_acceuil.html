@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify - Accueil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #004AAD;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+
+
+
+        nav {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        .hero {
+            position: relative;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            overflow: hidden;
+            margin-top: 60px;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 50px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        .event-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-section img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10%;
+        }
+
+        .event-text {
+            flex-grow: 1;
+            padding: 0 20px;
+        }
+
+        .event-section h2 {
+            margin-top: 0;
+        }
+
+        .event-section .event-info {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .event-section .event-info p {
+            margin: 0;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #004AAD;
+            text-decoration: none;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .footer-content .contact-form,
+        .footer-content .map {
+            width: 45%;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="Image/logo.png" alt="Sportify Logo">
+            <a href="main_acceuil.html">Accueil</a>
+            <a href="tout-parcourir.html">Tout Parcourir</a>
+            <a href="recherche.html">Recherche</a>
+            <a href="acceuil_rdv.php">Rendez-vous</a>
+            <a href="compte.html">Votre Compte</a>
+        </nav>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="Image/accueil_video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos HTML5.
+        </video>
+        <div class="hero-content">
+            <h1>Bienvenue sur Sportify</h1>
+            <p>Votre application de sport personnalisée</p>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <div class="event-text">
+            <h2>À propos de Sportify</h2>
+            <div class="event-info">
+                <p>Sportify est une plateforme innovante créée pour la communauté d'Omnes Education, permettant aux utilisateurs de prendre des rendez-vous sportifs en ligne. Les membres peuvent parcourir une liste de spécialistes, consulter leurs CVs, coordonnées et disponibilités, puis réserver des séances. En cas de disponibilité, les spécialistes peuvent être contactés via chat. Le site est géré par une équipe d'administrateurs, responsables de l'ajout de nouveaux spécialistes et de la gestion des données pertinentes. Sportify est conçu pour faciliter l'accès aux services sportifs pour tous les membres de la communauté.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <img src="Image/evenement_muscu.jpg" alt="Évènement de la semaine">
+        <div class="event-text">
+            <h2>Évènement de la semaine</h2>
+            <div class="event-info">
+                <p>Ce vendredi, Jean El Haj, membre de Sportify, tentera de battre le record de développé couché. <br><br>
+                    L'événement promet d'être un moment palpitant alors que Jean El Haj se prépare à affronter ce défi audacieux. Son entraînement intensif et sa détermination sans faille ont attiré l'attention de nombreux amateurs de sport, qui attendent avec impatience de voir s'il pourra surpasser le record actuel. <br>
+                    Le développé couché est un exercice emblématique de force et de puissance, exigeant à la fois technique et force brute. Jean El Haj, connu pour son engagement envers l'entraînement et sa passion pour le dépassement de soi, est prêt à relever ce défi avec confiance et détermination. <br>
+                    L'événement sera suivi de près par les fans de Sportify ainsi que par la communauté de musculation en général. L'atmosphère sera chargée d'excitation alors que Jean El Haj se prépare à écrire une nouvelle page dans l'histoire du développé couché. <br>
+                    Restez connecté pour les dernières mises à jour et les résultats de cette tentative de record palpitante.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <img src="Image/Compet_foot.jpg" alt="Bulletin Sportif de la semaine">
+        <div class="event-text">
+            <h2>Bulletin Sportif de la semaine</h2>
+            <div class="event-info">
+                <p>Hier soir, malgré une lutte acharnée pendant 60 minutes, le club de football TD10 a finalement dû s'incliner face au TD6, avec un score final de 8-3. Cette défaite vient s'ajouter à une série de difficultés que le club a rencontrées tout au long de la saison. <br><br>
+                    Depuis le début de la compétition, le TD10 a lutté pour trouver sa forme et sa cohésion sur le terrain. Des blessures clés, des suspensions et d'autres problèmes internes ont entravé la performance de l'équipe, lui faisant perdre des points précieux dans le classement. <br>
+                    Malgré les efforts déployés par les joueurs et le staff technique pour surmonter ces obstacles, les résultats n'ont pas été à la hauteur des attentes. La défaite d'hier soir contre le TD6 illustre parfaitement les difficultés auxquelles le club est confronté cette saison. <br>
+                    Cependant, tous les espoirs ne sont pas perdus pour le TD10. Avec une analyse minutieuse des performances, des ajustements tactiques et un regain de motivation, l'équipe pourrait encore renverser la tendance et terminer la saison sur une note positive. Les prochaines semaines seront cruciales pour le club alors qu'il cherche à se remettre sur les rails et à retrouver sa place parmi les prétendants au titre. <br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-form">
+                <h2>Contact</h2>
+                <form>
+                    <input type="text" name="name" placeholder="Nom" required><br>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <textarea name="message" placeholder="Message" required></textarea><br>
+                    <button type="submit">Envoyer</button>
+                </form>
+                <p>Adresse: 123 Rue Sportify, Paris, France</p>
+                <p>Email: contact@sportify.com</p>
+                <p>Téléphone: +33 1 23 45 67 89</p>
+                <p>Suivez-nous sur les réseaux sociaux</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9902411959826!2d2.2922926156748347!3d48.858844279287404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdf3d3a6c63%3A0xb54b8d74c6e5f0b1!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1629129112843!5m2!1sen!2sfr"></iframe>
+            </div>
+        </div>
+        <p>© 2024 Sportify. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        const images = document.querySelectorAll('.carousel img');
+        let currentIndex = 0;
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        }
+
+        document.getElementById('next').addEventListener('click', nextImage);
+        document.getElementById('prev').addEventListener('click', prevImage);
+
+        setInterval(nextImage, 3000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche - Sportify</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #004AAD;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 100px;
+            text-align: center;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            flex: 1;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+        .results {
+            margin-top: 30px;
+        }
+        .results h2 {
+            margin-bottom: 20px;
+        }
+        .list-group-item img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 20px;
+        }
+        .list-group-item {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Image/logo.png" alt="Sportify Logo">
+            <a href="main_acceuil.html">Accueil</a>
+            <a href="tout-parcourir.html">Tout Parcourir</a>
+            <a href="recherche.html">Recherche</a>
+            <a href="acceuil_rdv.php">Rendez-vous</a>
+            <a href="compte.html">Votre Compte</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="text-center">Recherche - Sportify</h1>
+        <form id="searchForm" method="POST" action="recherche_resultats.php">
+            <div class="search-bar">
+                <input type="text" id="query" name="query" class="form-control" placeholder="Nom ou Spécialité ou Établissement" required>
+                <button type="submit" class="btn btn-primary">Rechercher</button>
+            </div>
+        </form>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

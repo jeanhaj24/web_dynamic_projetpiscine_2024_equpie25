@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=1.0">
+    <title>Votre Compte - Sportify</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #004AAD;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 100px; /* Augmentez la marge pour éloigner le contenu du header */
+        }
+        .photo {
+            max-width: 200px;
+            max-height: 200px;
+        }
+        .xml-content {
+            white-space: pre-wrap; /* Pour garder les espaces et les sauts de ligne du fichier XML */
+            background-color: #f8f9fa;
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Image/logo.png" alt="Sportify Logo">
+            <a href="main_acceuil.html">Accueil</a>
+            <a href="tout-parcourir.html">Tout Parcourir</a>
+            <a href="recherche.html">Recherche</a>
+            <a href="acceuil_rdv.php">Rendez-vous</a>
+            <a href="compte.html">Votre Compte</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="text-center">Votre Compte - Sportify</h1>
+        <div class="info-section">
+            <h2>Informations Personnelles</h2>
+            <form id="accountForm" method="POST" action="account_info.php">
+                <div class="form-group">
+                    <label for="type_compte">Type de Compte :</label>
+                    <select id="type_compte" name="type_compte" class="form-control" required>
+                        <option value="client">Client</option>
+                        <option value="coach">Coach</option>
+                        <option value="administrateur">Administrateur</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="courriel">Email :</label>
+                    <input type="email" id="courriel" name="courriel" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de Passe :</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Afficher les Informations</button>
+                <div class="mt-4">
+                    <a href="inscription.html" class="btn btn-success btn-block">Inscription</a>
+                </div>
+                <div class="mt-4">
+                    <a href="admin.html" class="btn btn-danger btn-block">Mode Administrateur</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
